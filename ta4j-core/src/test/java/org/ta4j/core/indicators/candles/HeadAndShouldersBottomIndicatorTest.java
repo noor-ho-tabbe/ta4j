@@ -32,14 +32,13 @@ import org.ta4j.core.mocks.MockBarSeriesBuilder;
 import org.ta4j.core.num.Num;
 import org.ta4j.core.num.NumFactory;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class HeadAndShouldersTopIndicatorTest extends AbstractIndicatorTest<Indicator<Boolean>, Num> {
+public class HeadAndShouldersBottomIndicatorTest extends AbstractIndicatorTest<Indicator<Boolean>, Num> {
 
     private BarSeries series;
 
-    public HeadAndShouldersTopIndicatorTest(NumFactory numFactory) {
+    public HeadAndShouldersBottomIndicatorTest(NumFactory numFactory) {
         super(numFactory);
     }
 
@@ -80,6 +79,6 @@ public class HeadAndShouldersTopIndicatorTest extends AbstractIndicatorTest<Indi
 //        assertFalse(tws.getValue(10));
 //        assertTrue(tws.getValue(11));
 //        assertTrue(tws.getValue(12));
-        assertTrue(tws.getValue(18));
+        assertTrue(tws.getValue(19));
     }
 }
